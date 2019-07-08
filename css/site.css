@@ -20,4 +20,18 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+.landingImage {
+  width: 70%;
+  margin: auto;
+  display: block;
+  padding-top: 100px;
+}
+
+.geekQuote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+}
 /*# sourceMappingURL=site.css.map */
