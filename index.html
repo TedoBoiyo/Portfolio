@@ -13,21 +13,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="sideNav" class="sidenav">
+    <div id="sideNav" class="sidenav" style="display: none">
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">About</a>
+        <a href="#">Career</a>
         <a href="#">Projects</a>
     </div> 
-    <div class="container-fluid" ng-controller="profile as vm">
+    <div class="container-fluid" ng-controller="home as vm">
         <div class="row">
             <div class="col-md-8 offset-md-2 landingPage">
-                <button class="navBtn"><img src="content/images/d-and-d-brands.svg" /></button>
+                <button id="navBtn" class="navBtn icon-sm"><img src="content/images/bars-solid.svg" /></button>
                 <img class="landingImage" src="content/images/IndexImagePlaceholder.png" />
+                <div class="geekQuote">
+                    <h2>Stay awhile and explore</h2>
+                </div>
             </div>
-        </div>
-        <div class="geekQuote">
-            <h2>Stay awhile and explore</h2>
         </div>
     </div>
 
@@ -37,12 +37,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
 
+    <script src="scripts/app/dataService/dataService.module.js"></script>
+    <script src="scripts/app/home/home.module.js"></script>
+    <script src="scripts/app/home/home.controller.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <footer>
     <h5>Let's start a conversation</h5>
-    <p><strong>Email: </strong><a href="mailto: tedtbui@gmail.com">tedtbui@gmail.com</a></p>
-    <p><strong>Social: </strong>Facebook, LinkedIn</p>
+    <p>
+        <span><a href="https://www.facebook.com/ted.bui" target="_blank"><img class="icon-sm" src="content/images/facebook-square-brands.svg" /></a></span>
+        <span><a href="www.linkedin.com/in/tedbui" target="_blank"><img class="icon-sm" src="content/images/linkedin-brands.svg" /></a></span>
+        <span><a href="mailto: tedtbui@gmail.com" target="_blank"><img class="icon-sm" src="content/images/envelope-square-solid.svg" /></span></a>
+    </p>
 </footer>
 </html>
