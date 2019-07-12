@@ -19,8 +19,11 @@
 
     function activate() {
         $('#navBtn').on('click', function() {
-            $('#sideNav').css('background-color', 'black');
-            $('#sideNav').css('display', 'block');
+            $('#sideNav').css('width', '200px');
+        });
+
+        $('#navCloseBtn').on('click', function() {
+            $('#sideNav').css('width', '0px');
         });
     };
 })();
