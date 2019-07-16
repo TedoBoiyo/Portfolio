@@ -3,7 +3,7 @@
 
     angular
         .module('home', [
-            'dataService',
+            'dataService'
         ]);
         
 })();

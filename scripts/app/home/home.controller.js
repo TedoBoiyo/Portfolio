@@ -6,10 +6,10 @@
         .controller('HomeController', HomeController);
 
     HomeController.$inject = [
-        '$scope'
+        
     ];
 
-    function HomeController($scope) {
+    function HomeController() {
         var vm = this;
     }
 
@@ -18,12 +18,16 @@
     ///////////
 
     function activate() {
-        $('#navBtn').on('click', function() {
-            $('#sideNav').css('width', '200px');
-        });
+        // $('document').ready(function() {
+        //     $('#content').html('home.html')
+        // });
+        
+        // $('#navBtn').on('click', function() {
+        //     $('#sideNav').css('width', '200px');
+        // });
 
-        $('#navCloseBtn').on('click', function() {
-            $('#sideNav').css('width', '0px');
-        });
+        // $('#navCloseBtn').on('click', function() {
+        //     $('#sideNav').css('width', '0px');
+        // });
     };
 })();
