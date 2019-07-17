@@ -1,13 +1,50 @@
 .container-fluid {
     font-family: 'Times New Roman', Times, serif;
+    background-color: #303030;
+    color: #FFFFFF;
+    padding: 0 !important;
+}
+
+.title-bar {
+    border-bottom: 2px solid white;
+    padding: 20px 20px 10px 20px;
+
+    .title-area {
+        display: inline-block;
+
+        .name-title {
+            font-size: 24px;
+            line-height: 5px;
+        }
+
+        .position-title {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        text-align: center;
+    }
+
+    .top-nav {
+        display: inline-block;
+        text-align: center;
+    
+        a {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+    }
 }
 
 footer {
     position: fixed;
     text-align: center;
     bottom: 0;
-    left: 0;
     width: 100%;
+    padding-top: 20px;
+    border-top: 2px solid white;
     
     h5 {
         font-size: 24px;
@@ -16,25 +53,30 @@ footer {
     p {
         line-height: 5px;
     }
+
+    .icon-facebook {
+        background-color: #3B5998;
+    }
+    
+    .icon-linkedin {
+        background-color: #0077b5ff;
+    }
+    
+    .icon-gmail {
+        background-color: #D44638;
+    }
+    
+    .icon-facebook, .icon-linkedin, .icon-gmail {
+        border-radius: 10%;
+    }
 }
 
-.top-nav {
-    position: fixed;
-    background-color: lightgray;
-    text-align: center;
-    left: 0;
-    padding: 20px;
-    width: 100%;
-    z-index: 1;
-    opacity: 0.1;
+.title-bar, footer {
+    background-color: #212121;
+    opacity: 0.3;
+    z-index: 0;
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
-
-    a {
-        font-size: 20px;
-        color: black;   
-        margin-right: 50px;
-    }
 
     &:hover {
         opacity: 1;
@@ -102,16 +144,6 @@ footer {
     background-color: black;
 }
 
-.landingPage {
-    position: relative;
-    top: 70px;
-    
-}
-
-.landingImage {
-    width: 100%;
-}
-
 .icon-sm {
     width: 50px;
     height: 50px;
@@ -121,4 +153,5 @@ footer {
     width: 35px;
     height: 35px;
 }
+
 

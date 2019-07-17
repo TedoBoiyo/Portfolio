@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="home">
+<html ng-app="app">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ted Bui's Personal Website</title>
-    <link rel="shortcut icon" href="/TedBui">
     <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="scripts/ext-modules/psMenu/css/psMenu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
     
+    <script src="https://kit.fontawesome.com/79b48fcc9b.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body class="container-fluid">
-    <div id="topNav" class="top-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Career</a>
-        <a href="#">Projects</a>
-    </div>
-    <!-- <div id="sideNav" class="side-nav">
-        <button id="navCloseBtn" class="navCloseBtn icon-xs"><img src="content/images/times-solid.svg" /></button>
-        <a href="home">Home</a>
-        <a href="/about.html">About</a>
-        <a href="#">Career</a>
-        <a href="#">Projects</a>
-    </div>  -->
-
-    <div class="content">
-
-    </div>
+    <ps-framework name="Ted Bui"
+                            position="Front End Developer">
+        <ps-menu>
+            <ps-menu-item label="Home" icon="fa-home" route="home"></ps-menu-item>
+            <ps-menu-item label="About" icon="fa-address-card" route="about"></ps-menu-item>
+            <ps-menu-item label="Career" icon="fa-briefcase" route="career"></ps-menu-item>
+            <ps-menu-item label="Projects" icon="fa-project-diagram" route="projects"></ps-menu-item>
+        </ps-menu>
+    </ps-framework>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
@@ -37,7 +30,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
 
-    <script src="scripts/app/dataService/dataService.module.js"></script>
+    <script src="scripts/app/app.module.js"></script>
+    <script src="scripts/app/app.config.js"></script>
+
+    <script src="scripts/ext-modules/psMenu/psMenu.module.js"></script>
+    <script src="scripts/ext-modules/psMenu/psMenu.controller.js"></script>
+    <script src="scripts/ext-modules/psMenu/psMenu.directive.js"></script>
+    <script src="scripts/ext-modules/psMenu/psMenuItem.directive.js"></script>
+
+    <script src="scripts/ext-modules/psDashboard/psDashboard.module.js"></script>
+
+    <script src="scripts/ext-modules/psFramework/psFramework.module.js"></script>
+    <script src="scripts/ext-modules/psFramework/psFramework.controller.js"></script>
+    <script src="scripts/ext-modules/psFramework/psFramework.directive.js"></script>
+
+    <script src="scripts/dataService/dataService.module.js"></script>
+
     <script src="scripts/app/home/home.module.js"></script>
     <script src="scripts/app/home/home.controller.js"></script>
 
@@ -45,11 +53,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <h5>Let's start a conversation</h5>
+    <h5>Let's Connect:</h5>
     <p>
-        <span><a href="https://www.facebook.com/ted.bui" target="_blank"><img class="icon-sm" src="content/images/facebook-square-brands.svg" /></a></span>
-        <span><a href="https://www.linkedin.com/in/tedbui" target="_blank"><img class="icon-sm" src="content/images/linkedin-brands.svg" /></a></span>
-        <span><a href="mailto: tedtbui@gmail.com" target="_blank"><img class="icon-sm" src="content/images/envelope-square-solid.svg" /></span></a>
+        <span><a href="https://www.facebook.com/ted.bui" target="_blank"><img class="icon-sm icon-facebook" src="content/images/facebook-square-brands.svg" /></a></span>
+        <span><a href="https://www.linkedin.com/in/tedbui" target="_blank"><img class="icon-sm icon-linkedin" src="content/images/linkedin-brands.svg" /></a></span>
+        <span><a href="mailto: tedtbui@gmail.com" target="_blank"><img class="icon-sm icon-gmail" src="content/images/envelope-square-solid.svg" /></span></a>
     </p>
 </footer>
 </html>

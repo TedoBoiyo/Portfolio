@@ -1,0 +1,58 @@
+.menu-area {
+  position: relative;
+  background-color: #212121;
+  color: white;
+  padding-left: 0;
+  width: 200px;
+  min-height: 100vh;
+  padding-top: 30px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.menu-area .btn:hover {
+  color: #ccc;
+}
+
+.menu-area ul {
+  padding-left: 0;
+}
+
+.menu-area .menu {
+  list-style-type: none;
+  vertical-align: top;
+}
+
+.menu-area .menu ul {
+  display: inline;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-area .menu li {
+  line-height: 3em;
+  cursor: pointer;
+}
+
+.menu-area .menu li div {
+  display: inline-block;
+  width: 90%;
+  padding-left: 16px;
+}
+
+.menu-area .menu .selectable-item:hover {
+  background-color: #555;
+}
+
+.menu-area .menu .noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menu-area .menu .menu-icon {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=psMenu.css.map */

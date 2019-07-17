@@ -1,13 +1,52 @@
 .container-fluid {
   font-family: 'Times New Roman', Times, serif;
+  background-color: #303030;
+  color: #FFFFFF;
+  padding: 0 !important;
+}
+
+.title-bar {
+  border-bottom: 2px solid white;
+  padding: 20px 20px 10px 20px;
+}
+
+.title-bar .title-area {
+  display: inline-block;
+}
+
+.title-bar .title-area .name-title {
+  font-size: 24px;
+  line-height: 5px;
+}
+
+.title-bar .title-area .position-title {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+  .title-bar {
+    text-align: center;
+  }
+}
+
+.title-bar .top-nav {
+  display: inline-block;
+  text-align: center;
+}
+
+.title-bar .top-nav a {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 20px;
 }
 
 footer {
   position: fixed;
   text-align: center;
   bottom: 0;
-  left: 0;
   width: 100%;
+  padding-top: 20px;
+  border-top: 2px solid white;
 }
 
 footer h5 {
@@ -18,26 +57,31 @@ footer p {
   line-height: 5px;
 }
 
-.top-nav {
-  position: fixed;
-  background-color: lightgray;
-  text-align: center;
-  left: 0;
-  padding: 20px;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.1;
+footer .icon-facebook {
+  background-color: #3B5998;
+}
+
+footer .icon-linkedin {
+  background-color: #0077b5ff;
+}
+
+footer .icon-gmail {
+  background-color: #D44638;
+}
+
+footer .icon-facebook, footer .icon-linkedin, footer .icon-gmail {
+  border-radius: 10%;
+}
+
+.title-bar, footer {
+  background-color: #212121;
+  opacity: 0.3;
+  z-index: 0;
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
 }
 
-.top-nav a {
-  font-size: 20px;
-  color: black;
-  margin-right: 50px;
-}
-
-.top-nav:hover {
+.title-bar:hover, footer:hover {
   opacity: 1;
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
@@ -96,15 +140,6 @@ footer p {
   top: 0;
   right: 0;
   background-color: black;
-}
-
-.landingPage {
-  position: relative;
-  top: 70px;
-}
-
-.landingImage {
-  width: 100%;
 }
 
 .icon-sm {

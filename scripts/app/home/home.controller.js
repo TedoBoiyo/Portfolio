@@ -11,23 +11,26 @@
 
     function HomeController() {
         var vm = this;
-    }
+        
 
-    activate();
+        activate();
+
+        function activate() {
+            // $('document').ready(function() {
+            //     $('#content').html('home.html')
+            // });
+            
+            // $('#navBtn').on('click', function() {
+            //     $('#sideNav').css('width', '200px');
+            // });
+    
+            // $('#navCloseBtn').on('click', function() {
+            //     $('#sideNav').css('width', '0px');
+            // });
+        };
+    }
 
     ///////////
 
-    function activate() {
-        // $('document').ready(function() {
-        //     $('#content').html('home.html')
-        // });
-        
-        // $('#navBtn').on('click', function() {
-        //     $('#sideNav').css('width', '200px');
-        // });
-
-        // $('#navCloseBtn').on('click', function() {
-        //     $('#sideNav').css('width', '0px');
-        // });
-    };
+    
 })();
