@@ -14,12 +14,22 @@
         var vm = this;
         vm.setActiveElement = setActiveElement;
         vm.setRoute = setRoute;
+        vm.getActiveElement = getActiveElement;
 
         activate();
+        
 
         function activate() {
+            $scope.showMenu = false;
 
+            $scope.$on('menu-show', function (evt, data) {
+                $scope.showMenu = data.show;
+            });
         };
+
+        function getActiveElement() {
+            return $scope.activeElement;
+        }
 
         function setActiveElement(elem) {
             $scope.activeElement = elem;

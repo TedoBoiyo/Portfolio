@@ -1,17 +1,21 @@
 <div class="title-bar">
-    <div class="title-area col-lg-3 col-sm-12">
-        <p class="name-title">{{name}}</p>
-        <p class="position-title">{{position}}</p>
-    </div>
-    <div id="topNav" class="top-nav col-lg-6 col-sm-12">
-        
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Career</a>
-        <a href="">Projects</a>
-    </div>
-    <div class="mobile-nav-btn">
-        <!-- <button id="navBtn" class="navBtn icon-sm"><img src="content/images/bars-solid.svg" /></button> -->
+    <div class="row">
+        <div class="title-area col-9">
+            <p class="name-title">{{name}}</p>
+            <p class="position-title">{{position}}</p>
+        </div>
+        <div class="collapsed-menu col-3" ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()">
+            <button type="button" class="btn nav-button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- <div id="topNav" class="top-nav col-lg-6 col-sm-12">
+            
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Career</a>
+            <a href="">Projects</a>
+        </div> -->
     </div>
 </div>
 <div ng-transclude></div>

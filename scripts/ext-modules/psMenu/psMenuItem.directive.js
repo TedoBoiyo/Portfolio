@@ -17,6 +17,11 @@
             },
             templateUrl: 'scripts/ext-modules/psMenu/psMenuItemTemplate.html',
             link: function(scope, elem, attr, ctrl) {
+
+                scope.isActive = function () {
+                    return elem === ctrl.getActiveElement();
+                }
+
                 elem.on('click', function(evt) {
                     evt.stopPropagation();
                     evt.preventDefault();
