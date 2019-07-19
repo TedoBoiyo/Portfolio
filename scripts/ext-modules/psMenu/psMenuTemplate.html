@@ -1,3 +1,3 @@
-<div class="menu-area" ng-show="showMenu">
+<div class="menu-area" ng-show="showMenu" ng-class="{'menu-area-horizontal': !isMenuVertical, 'menu-area-vertical': isMenuVertical}">
     <ul class="menu" ng-transclude></ul>
 </div>

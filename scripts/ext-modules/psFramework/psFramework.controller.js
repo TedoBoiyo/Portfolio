@@ -47,6 +47,10 @@
                 $rootScope.$broadcast('menu-show', {
                     show: $scope.isMenuVisible
                 });
+
+                $rootScope.$broadcast('vertical-menu-event', {
+                    isMenuVertical: $scope.isMenuButtonVisible
+                });
             }
 
             $timeout(function() {

@@ -16,15 +16,25 @@
         vm.setRoute = setRoute;
         vm.getActiveElement = getActiveElement;
 
+        this.isVertical = function () {
+            return $scope.isVertical;
+        };
+
         activate();
         
 
         function activate() {
             $scope.showMenu = false;
+            $scope.isMenuVertical = true;
 
             $scope.$on('menu-show', function (evt, data) {
                 $scope.showMenu = data.show;
             });
+
+            $scope.$on('vertical-menu-event', function (evt, data) {
+                $scope.isMenuVertical = data.isMenuVertical
+            });
+
         };
 
         function getActiveElement() {

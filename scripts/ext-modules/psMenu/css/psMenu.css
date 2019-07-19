@@ -4,8 +4,6 @@
   color: white;
   padding-left: 0;
   width: 100%;
-  min-height: 100vh;
-  padding-top: 30px;
   z-index: 1;
   font-size: 20px;
 }
@@ -61,5 +59,30 @@
   color: white;
   margin-right: 0;
   margin-top: 8px;
+  display: inherit;
+}
+
+@media screen and (min-width: 430) {
+  .menu-area .menu .menu-active-indicator {
+    display: none;
+  }
+}
+
+.menu-area-vertical {
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.menu-area-horizontal {
+  height: 40px;
+  text-align: center;
+}
+
+.item-horizontal {
+  display: inline-block;
+  width: 165px !important;
+  margin-left: 20px;
+  margin-top: 5px;
+  line-height: 1.5em !important;
 }
 /*# sourceMappingURL=psMenu.css.map */

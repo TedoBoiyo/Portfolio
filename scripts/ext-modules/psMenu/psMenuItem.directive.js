@@ -22,6 +22,10 @@
                     return elem === ctrl.getActiveElement();
                 }
 
+                scope.isVertical = function () {
+                    return ctrl.isVertical();
+                }
+
                 elem.on('click', function(evt) {
                     evt.stopPropagation();
                     evt.preventDefault();
