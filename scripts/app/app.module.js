@@ -3,7 +3,8 @@
 
     angular
         .module('app', [
-            'psFramework'
+            'psFramework',
+            "ngRoute"
         ]);
         
 })();

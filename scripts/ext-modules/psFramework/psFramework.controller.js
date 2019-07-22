@@ -9,10 +9,11 @@
         '$scope',
         '$window',
         '$timeout',
-        '$rootScope'
+        '$rootScope',
+        '$location'
     ];
 
-    function psFrameworkController($scope, $window, $timeout, $rootScope) {
+    function psFrameworkController($scope, $window, $timeout, $rootScope, $location) {
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
         $scope.isLoading = true;
@@ -65,6 +66,7 @@
 
             $scope.$on('menu-item-selected-event', function(evt, data){
                 $scope.routeString = data.route;
+                $location.path(data.route)
                 checkWidth();
                 broadcastMenuState();
             });
