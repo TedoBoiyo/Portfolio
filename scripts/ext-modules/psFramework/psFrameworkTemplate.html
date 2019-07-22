@@ -13,4 +13,4 @@
 </div>
 <div ng-show='isLoading' class="loading"><span class="fa fa-spinner"></span></div>
 <div ng-transclude ng-show='!isLoading'></div>
-<div ng-view class="view" ng-class="{'view-full-width': !isMenuVertical || !isMenuVisible}"></div>
+<div ng-view ng-show='!isLoading' class="view" ng-class="{'view-full-width': !isMenuVertical || !isMenuVisible}"></div>
