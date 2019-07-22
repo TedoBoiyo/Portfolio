@@ -13,51 +13,55 @@
     ];
 
     function psFrameworkController($scope, $window, $timeout, $rootScope) {
-        var vm = this;
+        $scope.isMenuVisible = true;
+        $scope.isMenuButtonVisible = true;
+        $scope.isLoading = true;
 
-        activate();
+        $scope.menuButtonClicked = menuButtonClicked;
 
-        function activate() {
-            $scope.isMenuVisible = true;
-            $scope.isMenuButtonVisible = true;
+        _addBindings();
 
+        // Check window size on start up
+        $timeout(function() {
+            checkWidth();
+            broadcastMenuState();
+            $scope.isLoading = false;
+        }, 2000);
+
+        ///////////
+
+        function menuButtonClicked() {
+            $scope.isMenuVisible = !$scope.isMenuVisible;
+            broadcastMenuState();
+        }
+
+        function checkWidth() {
+            var width = Math.max($($window).innerWidth(), $window.innerWidth);
+            $scope.isMenuVisible = (width > 754);
+            $scope.isMenuButtonVisible = !$scope.isMenuVisible;
+        }
+
+        function broadcastMenuState() {
+            $rootScope.$broadcast('menu-show', {
+                show: $scope.isMenuVisible
+            });
+
+            $rootScope.$broadcast('vertical-menu-event', {
+                isMenuVertical: $scope.isMenuButtonVisible
+            });
+        }
+
+        function _addBindings() {
             $($window).on('resize.psFramework', function(){
                 $scope.$apply(function() {
                     checkWidth();
                     broadcastMenuState();
                 });
             });
-
+    
             $scope.$on("$destroy", function() {
                 $($window).off("resize.psFramework"); // remove the handler
             });
-
-            var checkWidth = function () {
-                var width = Math.max($($window).innerWidth(), $window.innerWidth);
-                $scope.isMenuVisible = (width > 430);
-                $scope.isMenuButtonVisible = !$scope.isMenuVisible;
-            };
-
-            $scope.menuButtonClicked = function() {
-                $scope.isMenuVisible = !$scope.isMenuVisible;
-                broadcastMenuState();
-            }
-
-            var broadcastMenuState = function() {
-                $rootScope.$broadcast('menu-show', {
-                    show: $scope.isMenuVisible
-                });
-
-                $rootScope.$broadcast('vertical-menu-event', {
-                    isMenuVertical: $scope.isMenuButtonVisible
-                });
-            }
-
-            $timeout(function() {
-                checkWidth();
-            }, 0);
-
-            
 
             $scope.$on('menu-item-selected-event', function(evt, data){
                 $scope.routeString = data.route;
@@ -66,8 +70,4 @@
             });
         };
     }
-
-    ///////////
-
-    
 })();

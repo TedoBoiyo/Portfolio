@@ -11,31 +11,18 @@
     ];
 
     function psMenuController($scope, $rootScope) {
-        var vm = this;
-        vm.setActiveElement = setActiveElement;
-        vm.setRoute = setRoute;
-        vm.getActiveElement = getActiveElement;
+        $scope.showMenu = true;
+        $scope.isMenuVertical = true;
 
-        this.isVertical = function () {
-            return $scope.isVertical;
-        };
+        var ctrl = this;
+        ctrl.getActiveElement = getActiveElement;
+        ctrl.setActiveElement = setActiveElement;
+        ctrl.setRoute = setRoute;
+        ctrl.isVertical = isVertical;
 
-        activate();
-        
+        _addBindings();
 
-        function activate() {
-            $scope.showMenu = false;
-            $scope.isMenuVertical = true;
-
-            $scope.$on('menu-show', function (evt, data) {
-                $scope.showMenu = data.show;
-            });
-
-            $scope.$on('vertical-menu-event', function (evt, data) {
-                $scope.isMenuVertical = data.isMenuVertical
-            });
-
-        };
+        ///////////
 
         function getActiveElement() {
             return $scope.activeElement;
@@ -49,9 +36,19 @@
             $rootScope.$broadcast('menu-item-selected-event', 
                 {route: route})
         }
-    }
 
-    ///////////
+        function isVertical() {
+            return $scope.isMenuVertical;
+        }
 
+        function _addBindings() {
+            $scope.$on('menu-show', function (evt, data) {
+                $scope.showMenu = data.show;
+            });
     
+            $scope.$on('vertical-menu-event', function (evt, data) {
+                $scope.isMenuVertical = data.isMenuVertical
+            });
+        }
+    }
 })();

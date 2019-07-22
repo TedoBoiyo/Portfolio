@@ -90,7 +90,7 @@ footer .icon-facebook, footer .icon-linkedin, footer .icon-gmail {
   -webkit-transition-duration: 0.3s;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 754px) {
   .title-bar, footer {
     opacity: 1;
   }
@@ -104,5 +104,38 @@ footer .icon-facebook, footer .icon-linkedin, footer .icon-gmail {
 .icon-xs {
   width: 35px;
   height: 35px;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loading .fa-spinner {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=psFramework.css.map */

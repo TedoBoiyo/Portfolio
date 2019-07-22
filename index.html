@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
     
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-    ng-cloak {
+            display: none !important;
+        }
+    </style>
+
     <script src="https://kit.fontawesome.com/79b48fcc9b.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body class="container-fluid">
-    <ps-framework name="Ted Bui"
-                            position="Front End Developer">
+<body class="container-fluid" ng-cloak>
+    <ps-framework   name="Ted Bui"
+                    position="Front End Developer">
         <ps-menu>
             <ps-menu-item label="Home" icon="fa-home" route="home"></ps-menu-item>
             <ps-menu-item label="About" icon="fa-address-card" route="about"></ps-menu-item>

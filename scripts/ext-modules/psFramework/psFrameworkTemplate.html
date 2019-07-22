@@ -11,7 +11,8 @@
         </div>
     </div>
 </div>
-<div ng-transclude></div>
+<div ng-show='isLoading' class="loading"><span class="fa fa-spinner"></span></div>
+<div ng-transclude ng-show='!isLoading'></div>
 <div style="position:absolute; left: 220px; top: 200px; color: red; font-size: 44px;">
     {{routeString}}
 </div>
