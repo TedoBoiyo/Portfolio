@@ -3,8 +3,7 @@
 
     angular
         .module('psFramework', [
-            'psMenu',
-            'psDashboard'
+            'psMenu'
         ]);
         
 })();

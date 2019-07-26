@@ -1,0 +1,26 @@
+.about-page {
+    padding: 20px;
+
+    .about-image-area {
+        text-align: center;
+    
+        .about-image {
+            width: 100%;
+            //border-radius: 60% 40% 60% 40%;
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            -moz-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow: 3px 3px 5px 6px black; 
+        }
+    }
+
+    .about-text {
+        height: 100%;
+        margin-top: 50px;
+        font-size: 20px;
+
+        @media screen and (max-width: 766px) {
+            margin-top: 40px;
+        }
+    }
+   
+}

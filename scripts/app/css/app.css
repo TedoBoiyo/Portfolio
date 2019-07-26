@@ -1,0 +1,26 @@
+.about-page {
+  padding: 20px;
+}
+
+.about-page .about-image-area {
+  text-align: center;
+}
+
+.about-page .about-image-area .about-image {
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px black;
+}
+
+.about-page .about-text {
+  height: 100%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 766px) {
+  .about-page .about-text {
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

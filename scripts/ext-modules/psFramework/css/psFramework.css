@@ -90,7 +90,7 @@ footer .icon-facebook, footer .icon-linkedin, footer .icon-gmail {
   -webkit-transition-duration: 0.3s;
 }
 
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 770px) {
   .title-bar, footer {
     opacity: 1;
   }

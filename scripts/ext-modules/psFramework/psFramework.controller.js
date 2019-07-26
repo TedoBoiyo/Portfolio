@@ -38,7 +38,7 @@
 
         function checkWidth() {
             var width = Math.max($($window).innerWidth(), $window.innerWidth);
-            $scope.isMenuVisible = (width > 754);
+            $scope.isMenuVisible = (width > 766);
             $scope.isMenuButtonVisible = !$scope.isMenuVisible;
         }
 
