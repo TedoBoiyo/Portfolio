@@ -149,4 +149,9 @@ footer .icon-facebook, footer .icon-linkedin, footer .icon-gmail {
 .view-full-width {
   margin-left: 0;
 }
+
+.profile-image {
+  width: 150px;
+  display: inline-block;
+}
 /*# sourceMappingURL=psFramework.css.map */

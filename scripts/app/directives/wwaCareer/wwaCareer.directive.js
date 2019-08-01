@@ -13,7 +13,7 @@
             scope: {
 
             },
-            template: '<h1>Career Page</h1>'
+            templateUrl: 'scripts/app/directives/wwaCareer/wwaCareer.html'
         };
 
         return directive;

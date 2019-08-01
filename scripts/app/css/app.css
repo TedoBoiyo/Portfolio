@@ -1,4 +1,4 @@
-.about-page {
+.page {
   padding: 20px;
 }
 
@@ -22,5 +22,25 @@
   .about-page .about-text {
     margin-top: 40px;
   }
+}
+
+.career-page {
+  color: black;
+}
+
+.career-page button {
+  font-variant: small-caps;
+}
+
+.career-page li.listless {
+  list-style: none;
+}
+
+.career-page #accordion {
+  width: 100%;
+}
+
+.career-page .work-history li {
+  margin-left: 2em;
 }
 /*# sourceMappingURL=app.css.map */

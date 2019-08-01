@@ -1,5 +1,8 @@
+.page {
+    padding: 20px
+}
+
 .about-page {
-    padding: 20px;
 
     .about-image-area {
         text-align: center;
@@ -23,4 +26,26 @@
         }
     }
    
+}
+
+.career-page {
+    color: black;
+
+    button {
+        font-variant: small-caps;
+    }
+
+    li.listless {
+        list-style: none;
+    }
+
+    #accordion {
+        width: 100%;
+    }
+
+    .work-history {
+        li {
+            margin-left: 2em;
+        }
+    }
 }
