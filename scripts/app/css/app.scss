@@ -49,3 +49,19 @@
         }
     }
 }
+
+.project-page {
+    text-align: center;
+}
+
+.tile {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+
+    -webkit-box-shadow: 1px 1px 3px 4px #ccc;
+    -moz-box-shadow: 1px 1px 3px 4px #ccc;
+    box-shadow: 1px 1px 4px 4px black; 
+}
