@@ -13,7 +13,8 @@
             scope: {
 
             },
-            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html'
+            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html',
+            controller: 'wwaTileController'
         };
 
         return directive;
