@@ -13,7 +13,8 @@
             scope: {
 
             },
-            templateUrl: 'scripts/app/directives/wwaProjects/wwaProjects.html'
+            templateUrl: 'scripts/app/directives/wwaProjects/wwaProjects.html',
+            controller: 'wwaProjectsController'
         };
 
         return directive;

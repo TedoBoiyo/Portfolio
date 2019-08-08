@@ -11,10 +11,14 @@
     function wwaTile() {
         var directive = {
             scope: {
-
+                image: '@',
+                projectName: '@',
+                skills: '@',
+                summary: '@',
+                startDate: '@',
+                webLink: '@'
             },
-            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html',
-            controller: 'wwaTileController'
+            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html'
         };
 
         return directive;

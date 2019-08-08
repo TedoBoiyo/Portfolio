@@ -1,13 +1,14 @@
 <div class="page project-page">
     <div class="row">
         <div class="offset-md-2 col-md-8">
-            <div>
-                <wwa-tile></wwa-tile>
-                <wwa-tile></wwa-tile>
-                <wwa-tile></wwa-tile>
-                <wwa-tile></wwa-tile>
-                <wwa-tile></wwa-tile>
-                <wwa-tile></wwa-tile>
+            <div ng-repeat="project in vm.projectList">
+                <wwa-tile 
+                image='{{project.image}}'
+                project-name='{{project.projectName}}',
+                skills='{{project.skills}}',
+                summary='{{project.summary}}',
+                start-date='{{project.startDate}}',
+                web-link='{{project.webLink}}' />
             </div>
         </div>
     </div>
