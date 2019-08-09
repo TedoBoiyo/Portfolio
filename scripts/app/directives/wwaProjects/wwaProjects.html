@@ -1,13 +1,13 @@
 <div class="page project-page">
     <div class="row">
         <div class="offset-md-2 col-md-8">
-            <div ng-repeat="project in vm.projectList">
+            <div ng-repeat="project in projectList">
                 <wwa-tile 
                 image='{{project.image}}'
                 project-name='{{project.projectName}}',
-                skills='{{project.skills}}',
+                skill-list='{{project.skillList}}',
                 summary='{{project.summary}}',
-                start-date='{{project.startDate}}',
+                last-updated='{{project.lastUpdated}}',
                 web-link='{{project.webLink}}' />
             </div>
         </div>

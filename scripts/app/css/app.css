@@ -49,19 +49,35 @@
 }
 
 .tile {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 450px;
   border: 1px solid black;
   display: inline-block;
   margin: 10px;
+  text-align: left;
+  position: relative;
   cursor: pointer;
   -webkit-box-shadow: 1px 1px 3px 4px #ccc;
   box-shadow: 1px 1px 4px 4px black;
 }
 
-.tile-image-placeholder {
+.tile .last-modified {
+  right: 5px;
+  bottom: 0;
+  position: absolute;
+}
+
+.tile h4 {
+  margin-top: 10px;
+}
+
+.tile-image, .tile-image-placeholder {
   height: 50%;
+  width: 100%;
   border-bottom: 2px solid black;
+}
+
+.tile-image-placeholder {
   background-color: #ccc;
   padding-top: 20px;
   font-size: 24px;

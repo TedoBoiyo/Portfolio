@@ -11,15 +11,14 @@
     ];
 
     function wwaProjectsController($scope, wwaProjectService) {
-        var vm = this;
-        vm.projectList = null;
+        $scope.projectList = null;
 
         activate();
 
         ///////////
 
         function activate() {
-            vm.projectList = wwaProjectService.getProjects();
+            $scope.projectList = wwaProjectService.getProjects();
         }
 
     }

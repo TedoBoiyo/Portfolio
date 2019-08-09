@@ -10,6 +10,7 @@
 
     function wwaProjects() {
         var directive = {
+            transclude: true,
             scope: {
 
             },

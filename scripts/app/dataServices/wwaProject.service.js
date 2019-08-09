@@ -29,9 +29,9 @@
         return {
             image: '',
             projectName: '',
-            skills: '',
+            skillList: '',
             summary: '',
-            startDate: '',
+            lastUpdated: '',
             webLink: ''
         };
     }
@@ -40,9 +40,9 @@
         return {
             image: '',
             projectName: '',
-            skills: '',
+            skillList: '',
             summary: '',
-            startDate: '',
+            lastUpdated: '',
             webLink: ''
         };
     }
@@ -51,9 +51,9 @@
         return {
             image: 'content/images/FlashMem.PNG',
             projectName: 'FlashMem',
-            skills: ['JavaScript', 'jQuery','html5', 'css'],
+            skillList: ["JavaScript", "jQuery","HTML5", "CSS"],
             summary: 'A flashcard simulator web application designed to help users learn the basics of programming language and interview preparation.',
-            LastUpdated: '03/13/2018',
+            lastUpdated: '03/13/2018',
             webLink: 'https://tedoboiyo.github.io/FlashMem/'
         };
     }

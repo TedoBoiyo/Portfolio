@@ -1,4 +1,10 @@
-<div class="tile">
-    <img ng-if='project.image' />
-    <div class="tile-image-placeholder">Image</div>
-</div>
+<a class="tile" href='{{webLink}}' target="_blank">
+    <p class="last-modified">Last Modified: {{lastUpdated}}</p>
+    <img ng-if='image' class="tile-image" src="{{image}}" />
+    <div ng-if='!image' class="tile-image-placeholder">Image</div>
+    <div class="col-md-12">
+        <h4>{{projectName}}</h4>
+        <p ng-repeat="item in skillList">{{item}}</p>
+        <p>{{summary}}</p>
+    </div>
+</a>
