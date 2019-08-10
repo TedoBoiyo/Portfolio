@@ -4,7 +4,9 @@
     <div ng-if='!image' class="tile-image-placeholder">Image</div>
     <div class="col-md-12">
         <h4>{{projectName}}</h4>
-        <p ng-repeat="item in skillList">{{item}}</p>
+        <p class="skills">
+            <span ng-repeat="skill in skillList"><span ng-if="!$first">, </span>{{skill}}</span>
+        </p>
         <p>{{summary}}</p>
     </div>
 </a>
