@@ -1,8 +1,8 @@
 <div class="page project-page">
     <div class="row">
-        <div class="offset-md-2 col-md-8">
-            <div ng-repeat="project in projectList">
-                <wwa-tile 
+        <div class="col-sm-12">
+            <div class='project-list'>
+                <wwa-tile class="tile" ng-repeat="project in projectList"
                 image='{{project.image}}'
                 project-name='{{project.projectName}}',
                 skill-list='{{project.skillList}}',

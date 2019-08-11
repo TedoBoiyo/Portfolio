@@ -1,10 +1,13 @@
-<a class="tile" href='{{webLink}}' target="_blank">
-    <p class="last-modified">Last Modified: {{lastUpdated}}</p>
+<a href='{{webLink}}' target="_blank">
+    
     <img ng-if='image' class="tile-image" src="{{image}}" />
     <div ng-if='!image' class="tile-image-placeholder">Image</div>
     <div class="col-md-12">
         <h4>{{projectName}}</h4>
-        <p ng-repeat="item in skillList">{{item}}</p>
+        <p ng-show='skillList' class="skill-area">
+            <span ng-repeat="skill in skillList"><span ng-if='!$first'>, </span>{{skill}}</span>
+        </p>
         <p>{{summary}}</p>
     </div>
+    <p class="last-modified">Last Modified: {{lastUpdated}}</p>
 </a>

@@ -14,14 +14,24 @@
             scope: {
                 image: '@',
                 projectName: '@',
-                skillList: '@',
                 summary: '@',
                 lastUpdated: '@',
                 webLink: '@'
             },
-            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html'
+            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html',
+            link: _link
         };
 
         return directive;
+    }
+
+    ///////////
+
+    function _link(scope, elem, attrs) {
+        if(attrs.skillList) {
+            scope.skillList = JSON.parse(attrs.skillList);  
+        } else {
+            scope.skillList = null;
+        }
     }
 })();

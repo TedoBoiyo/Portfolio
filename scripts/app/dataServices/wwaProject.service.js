@@ -19,6 +19,8 @@
     // Pull info from github when amount increases
     function getProjects() {
         return [
+            getDescentHelper(),
+            getPortfolio(),
             getFlashMem()
         ];
     }
@@ -27,11 +29,18 @@
 
     function getPortfolio() {
         return {
-            image: '',
-            projectName: '',
-            skillList: '',
-            summary: '',
-            lastUpdated: '',
+            image: 'content/images/Ted-Professional.jpg',
+            projectName: 'My Portfolio',
+            skillList: [
+                'JavaScript',
+                'jQuery',
+                'AngularJS',
+                'SPA',
+                'HTML',
+                'CSS'
+            ],
+            summary: 'My personal web portfolio!',
+            lastUpdated: '8/10/2019',
             webLink: ''
         };
     }
@@ -39,11 +48,18 @@
     function getDescentHelper() {
         return {
             image: '',
-            projectName: '',
-            skillList: '',
-            summary: '',
-            lastUpdated: '',
-            webLink: ''
+            projectName: 'Descent Tracker Helper',
+            skillList: [
+                'JavaScript',
+                'jQuery',
+                'AngularJS',
+                'SPA',
+                'HTML',
+                'CSS'
+            ],
+            summary: 'A web application designed to help enhance the user experience while playing the Descent board game.',
+            lastUpdated: '07/08/2019',
+            webLink: 'https://tedoboiyo.github.io/Descent2ndEditionTrackerHelper/'
         };
     }
 
@@ -51,7 +67,12 @@
         return {
             image: 'content/images/FlashMem.PNG',
             projectName: 'FlashMem',
-            skillList: ["JavaScript", "jQuery","HTML5", "CSS"],
+            skillList: [
+                "JavaScript", 
+                "jQuery",
+                "HTML5", 
+                "CSS"
+            ],
             summary: 'A flashcard simulator web application designed to help users learn the basics of programming language and interview preparation.',
             lastUpdated: '03/13/2018',
             webLink: 'https://tedoboiyo.github.io/FlashMem/'

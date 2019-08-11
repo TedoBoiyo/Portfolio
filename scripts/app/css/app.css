@@ -30,6 +30,22 @@
 
 .career-page button {
   font-variant: small-caps;
+  color: black;
+  font-size: 24px;
+}
+
+.career-page button.position {
+  font-size: 20px;
+}
+
+.career-page p {
+  padding-left: 12px;
+  font-size: 18px;
+}
+
+.career-page span {
+  font-size: 18px;
+  padding-top: 8px;
 }
 
 .career-page li.listless {
@@ -48,9 +64,24 @@
   text-align: center;
 }
 
+.project-page .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .tile {
   width: 350px;
-  height: 450px;
+  height: 500px;
   border: 1px solid black;
   display: inline-block;
   margin: 10px;
@@ -61,25 +92,66 @@
   box-shadow: 1px 1px 4px 4px black;
 }
 
+.tile a {
+  color: white;
+}
+
+.tile a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 766px) {
+  .tile {
+    width: 100%;
+    height: auto;
+  }
+  .tile www-tile {
+    width: 100%;
+  }
+}
+
 .tile .last-modified {
-  right: 5px;
+  right: 15px;
   bottom: 0;
   position: absolute;
+}
+
+@media screen and (max-width: 766px) {
+  .tile .last-modified {
+    position: static;
+    text-align: right;
+    padding-right: 15px;
+  }
 }
 
 .tile h4 {
   margin-top: 10px;
 }
 
+.tile .skill-area {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .tile-image, .tile-image-placeholder {
-  height: 50%;
+  height: 45%;
   width: 100%;
   border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 766px) {
+  .tile-image, .tile-image-placeholder {
+    display: none;
+  }
 }
 
 .tile-image-placeholder {
   background-color: #ccc;
   padding-top: 20px;
   font-size: 24px;
+  text-align: center;
 }
 /*# sourceMappingURL=app.css.map */
