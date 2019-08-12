@@ -4,13 +4,8 @@
     <div ng-if='!image' class="tile-image-placeholder">Image</div>
     <div class="col-md-12">
         <h4>{{projectName}}</h4>
-<<<<<<< HEAD
-        <p class="skills">
-            <span ng-repeat="skill in skillList"><span ng-if="!$first">, </span>{{skill}}</span>
-=======
         <p ng-show='skillList' class="skill-area">
             <span ng-repeat="skill in skillList"><span ng-if='!$first'>, </span>{{skill}}</span>
->>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
         </p>
         <p>{{summary}}</p>
     </div>

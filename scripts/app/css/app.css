@@ -129,19 +129,18 @@
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
-.tile .skills {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding-top: 5px;
-  padding-bottom: 5px;
-=======
 .tile .skill-area {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding-top: 10px;
   padding-bottom: 10px;
->>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
+}
+
+.tile .skills {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .tile-image, .tile-image-placeholder {
