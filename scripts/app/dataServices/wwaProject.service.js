@@ -29,20 +29,6 @@
 
     function getPortfolio() {
         return {
-<<<<<<< HEAD
-            image: '',
-            projectName: 'My Portfolio',
-            skillList: [
-                'JavaScript', 
-                'jQuery',
-                'AngularJS',
-                'SPA',
-                'HTML5', 
-                'CSS'
-            ],
-            summary: '',
-            lastUpdated: '',
-=======
             image: 'content/images/Ted-Professional.jpg',
             projectName: 'My Portfolio',
             skillList: [
@@ -55,7 +41,6 @@
             ],
             summary: 'My personal web portfolio!',
             lastUpdated: '8/10/2019',
->>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
             webLink: ''
         };
     }
@@ -83,17 +68,10 @@
             image: 'content/images/FlashMem.PNG',
             projectName: 'FlashMem',
             skillList: [
-<<<<<<< HEAD
-                'JavaScript', 
-                'jQuery',
-                'HTML5', 
-                'CSS'
-=======
                 "JavaScript", 
                 "jQuery",
                 "HTML5", 
                 "CSS"
->>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
             ],
             summary: 'A flashcard simulator web application designed to help users learn the basics of programming language and interview preparation.',
             lastUpdated: '03/13/2018',
