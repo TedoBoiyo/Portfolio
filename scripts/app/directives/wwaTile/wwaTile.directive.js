@@ -19,11 +19,7 @@
                 webLink: '@'
             },
             templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html',
-<<<<<<< HEAD
-            link:  _link
-=======
             link: _link
->>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
         };
 
         return directive;
