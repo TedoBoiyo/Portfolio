@@ -19,6 +19,8 @@
     // Pull info from github when amount increases
     function getProjects() {
         return [
+            getDescentHelper(),
+            getPortfolio(),
             getFlashMem()
         ];
     }
@@ -27,6 +29,7 @@
 
     function getPortfolio() {
         return {
+<<<<<<< HEAD
             image: '',
             projectName: 'My Portfolio',
             skillList: [
@@ -39,6 +42,20 @@
             ],
             summary: '',
             lastUpdated: '',
+=======
+            image: 'content/images/Ted-Professional.jpg',
+            projectName: 'My Portfolio',
+            skillList: [
+                'JavaScript',
+                'jQuery',
+                'AngularJS',
+                'SPA',
+                'HTML',
+                'CSS'
+            ],
+            summary: 'My personal web portfolio!',
+            lastUpdated: '8/10/2019',
+>>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
             webLink: ''
         };
     }
@@ -46,11 +63,18 @@
     function getDescentHelper() {
         return {
             image: '',
-            projectName: '',
-            skillList: '',
-            summary: '',
-            lastUpdated: '',
-            webLink: ''
+            projectName: 'Descent Tracker Helper',
+            skillList: [
+                'JavaScript',
+                'jQuery',
+                'AngularJS',
+                'SPA',
+                'HTML',
+                'CSS'
+            ],
+            summary: 'A web application designed to help enhance the user experience while playing the Descent board game.',
+            lastUpdated: '07/08/2019',
+            webLink: 'https://tedoboiyo.github.io/Descent2ndEditionTrackerHelper/'
         };
     }
 
@@ -59,10 +83,17 @@
             image: 'content/images/FlashMem.PNG',
             projectName: 'FlashMem',
             skillList: [
+<<<<<<< HEAD
                 'JavaScript', 
                 'jQuery',
                 'HTML5', 
                 'CSS'
+=======
+                "JavaScript", 
+                "jQuery",
+                "HTML5", 
+                "CSS"
+>>>>>>> fa6b9c5228a7b7375923a75998fcfe99bf487b3c
             ],
             summary: 'A flashcard simulator web application designed to help users learn the basics of programming language and interview preparation.',
             lastUpdated: '03/13/2018',
