@@ -26,25 +26,37 @@
 
 .career-page {
   color: black;
+  text-align: left;
+}
+
+@media screen and (max-width: 766px) {
+  .career-page {
+    text-align: center;
+  }
 }
 
 .career-page button {
   font-variant: small-caps;
   color: black;
   font-size: 24px;
+  text-decoration: underline;
 }
 
 .career-page button.position {
   font-size: 20px;
 }
 
+.career-page .sub-heading {
+  padding-left: 28px;
+}
+
 .career-page p {
   padding-left: 12px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .career-page span {
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 8px;
 }
 
@@ -58,6 +70,16 @@
 
 .career-page .work-history li {
   margin-left: 2em;
+}
+
+.career-page .date {
+  text-align: right !important;
+}
+
+@media screen and (max-width: 766px) {
+  .career-page .date {
+    text-align: center !important;
+  }
 }
 
 .project-page {
