@@ -7,7 +7,7 @@ Ted Bui
 My personal website for those who want to get to know me a little bit more and what I'm about.
 
 ### JavaScript
-<img src="https://github.com/TedoBoiyo/Portfolio/blob/master/content/images/JavaScript.png">
+<img src="https://github.com/TedoBoiyo/Portfolio/blob/master/content/images/Javascript.png">
 <br>
 The scripting language used to develop the Portfolio Web Application.
 
