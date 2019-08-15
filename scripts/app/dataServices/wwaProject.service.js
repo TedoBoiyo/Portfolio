@@ -41,7 +41,7 @@
             ],
             summary: 'My personal web portfolio!',
             lastUpdated: '08/10/2019',
-            webLink: ''
+            webLink: 'https://tedoboiyo.github.io/Portfolio/'
         };
     }
 
