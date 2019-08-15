@@ -30,6 +30,3 @@ jQuery is a small part in which the Portfolio Web Application relies on to check
 Name 		| Email
 ----------- | -------------------
 Ted Bui 	| tedtbui@gmail.com
-
-## Documentation
-Documentation depicting the source code of the project. This information provides code doc that has enough information. More information under the doc/out/ folder path.
