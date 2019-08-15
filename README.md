@@ -7,12 +7,12 @@ Ted Bui
 My personal website for those who want to get to know me a little bit more and what I'm about.
 
 ### JavaScript
-<img src="https://github.com/TedoBoiyo/Portfolio/content/images/Javascript.png">
+<img src="https://github.com/TedoBoiyo/Portfolio/blob/master/content/images/JavaScript.png">
 <br>
 The scripting language used to develop the Portfolio Web Application.
 
 ### AngularJS
-<img src="https://github.com/TedoBoiyo/Portfolio/content/images/AngularJS-Shield.svg">
+<img src="https://github.com/TedoBoiyo/Portfolio/blob/master/content/images/AngularJS-Shield.svg">
 <br>
 The front-end web framework used to develop the single-page application.
 
