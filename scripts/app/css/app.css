@@ -2,6 +2,30 @@
   padding: 20px;
 }
 
+.home-page .home-welcome {
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
+.home-page .home-welcome p {
+  font-size: 20px;
+}
+
+.home-page .home-activity p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 766px) {
+  .home-page .home-activity {
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+  }
+}
+
+.home-page .tile {
+  margin: 0;
+}
+
 .about-page .about-image-area {
   text-align: center;
 }
@@ -14,13 +38,14 @@
 
 .about-page .about-text {
   height: 100%;
-  margin-top: 50px;
+  padding-left: 30px;
   font-size: 20px;
 }
 
 @media screen and (max-width: 766px) {
   .about-page .about-text {
     margin-top: 40px;
+    padding-left: 0;
   }
 }
 

@@ -1,0 +1,27 @@
+<div class="page home-page">
+    <div class="row">
+        <div class="offset-lg-1 col-lg-10 col-md-12">
+            <div class="home-welcome">
+                <h2>Welcome!</h2>
+                <p>Below you can check out what I've been up to recently.
+                Also the latest updates on what projects that I have been working on.</p>
+            </div>
+        </div>
+        <div class="offset-lg-1 col-lg-5 col-md-6 col-sm-12">
+            <div class="home-activity">
+                <h2>Current Activities</h2>
+                <p>Currently looking for new opportunities for work.</p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <h2>Current Project</h2>
+            <wwa-tile class="tile"
+            image='{{latestProject.image}}'
+            project-name='{{latestProject.projectName}}',
+            skill-list='{{latestProject.skillList}}',
+            summary='{{latestProject.summary}}',
+            last-updated='{{latestProject.lastUpdated}}',
+            web-link='{{latestProject.webLink}}' />
+        </div>
+    </div>
+</div>

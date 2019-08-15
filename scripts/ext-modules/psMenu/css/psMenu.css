@@ -57,6 +57,14 @@
   background-color: #555;
 }
 
+@media screen and (min-width: 766px) {
+  .menu-area .menu .selectable-item:hover {
+    color: lightsteelblue;
+    background-color: none;
+    opacity: 0.5;
+  }
+}
+
 .menu-area .menu .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -79,7 +87,7 @@
 
 @media screen and (min-width: 766px) {
   .menu-area .menu .menu-active-indicator {
-    display: none;
+    margin-top: -5px;
   }
 }
 

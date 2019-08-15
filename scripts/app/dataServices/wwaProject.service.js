@@ -40,7 +40,7 @@
                 'CSS'
             ],
             summary: 'My personal web portfolio!',
-            lastUpdated: '8/10/2019',
+            lastUpdated: '08/10/2019',
             webLink: ''
         };
     }

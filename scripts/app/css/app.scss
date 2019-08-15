@@ -2,6 +2,32 @@
     padding: 20px
 }
 
+.home-page {
+    .home-welcome {
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .home-activity {
+        p {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 766px) {
+            border-bottom: 2px solid white;
+            margin-bottom: 20px;
+        }
+    }
+
+    .tile {
+        margin: 0;
+    }
+}
+
 .about-page {
 
     .about-image-area {
@@ -18,11 +44,12 @@
 
     .about-text {
         height: 100%;
-        margin-top: 50px;
+        padding-left: 30px;
         font-size: 20px;
 
         @media screen and (max-width: 766px) {
             margin-top: 40px;
+            padding-left: 0;
         }
     }
    
