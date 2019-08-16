@@ -4,11 +4,11 @@
             <div class='project-list'>
                 <wwa-tile class="tile" ng-repeat="project in projectList"
                 image='{{project.image}}'
-                project-name='{{project.projectName}}',
+                project-name='{{project.name}}',
                 skill-list='{{project.skillList}}',
-                summary='{{project.summary}}',
-                last-updated='{{project.lastUpdated}}',
-                web-link='{{project.webLink}}' />
+                summary='{{project.description}}',
+                last-updated='{{project.updated_at | date:"MM/dd/yyyy"}}',
+                web-link='{{project.homepage}}' />
             </div>
         </div>
     </div>

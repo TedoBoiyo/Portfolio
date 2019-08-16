@@ -29,7 +29,7 @@
                 if (!scope.latestProject) {
                     scope.latestProject = projectList[i];
                 }
-                else if (new Date(scope.latestProject.lastUpdated) < new Date(projectList[i].lastUpdated)) {
+                else if (new Date(scope.latestProject.updated_at) < new Date(projectList[i].updated_at)) {
                     scope.latestProject = projectList[i]
                 }
             }

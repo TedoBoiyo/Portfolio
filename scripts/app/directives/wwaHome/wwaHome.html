@@ -17,11 +17,11 @@
             <h2>Current Project</h2>
             <wwa-tile class="tile"
             image='{{latestProject.image}}'
-            project-name='{{latestProject.projectName}}',
+            project-name='{{latestProject.name}}',
             skill-list='{{latestProject.skillList}}',
-            summary='{{latestProject.summary}}',
-            last-updated='{{latestProject.lastUpdated}}',
-            web-link='{{latestProject.webLink}}' />
+            summary='{{latestProject.description}}',
+            last-updated='{{latestProject.updated_at | date:"MM/dd/yyyy"}}',
+            web-link='{{latestProject.homepage}}' />
         </div>
     </div>
 </div>

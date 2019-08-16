@@ -28,54 +28,68 @@
     ///////////
 
     function getPortfolio() {
-        return {
-            image: 'content/images/Ted-Professional.jpg',
-            projectName: 'My Portfolio',
-            skillList: [
-                'JavaScript',
-                'jQuery',
-                'AngularJS',
-                'SPA',
-                'HTML',
-                'CSS'
-            ],
-            summary: 'My personal web portfolio!',
-            lastUpdated: '08/10/2019',
-            webLink: 'https://tedoboiyo.github.io/Portfolio/'
-        };
+        let repoPortfolio = getGitHubResource('Portfolio');
+        repoPortfolio.image = 'content/images/Ted-Professional.jpg'
+        repoPortfolio.skillList = [
+            'JavaScript',
+            'jQuery',
+            'AngularJS',
+            'SPA',
+            'HTML',
+            'CSS'
+        ];
+
+        return repoPortfolio;
     }
 
     function getDescentHelper() {
-        return {
-            image: '',
-            projectName: 'Descent Tracker Helper',
-            skillList: [
-                'JavaScript',
-                'jQuery',
-                'AngularJS',
-                'SPA',
-                'HTML',
-                'CSS'
-            ],
-            summary: 'A web application designed to help enhance the user experience while playing the Descent board game.',
-            lastUpdated: '07/08/2019',
-            webLink: 'https://tedoboiyo.github.io/Descent2ndEditionTrackerHelper/'
-        };
+        let repoDescent = getGitHubResource('Descent2ndEditionTrackerHelper');
+        repoDescent.image = ''
+        repoDescent.skillList = [
+            'JavaScript',
+            'jQuery',
+            'AngularJS',
+            'SPA',
+            'HTML',
+            'CSS'
+        ];
+
+        return repoDescent;
     }
 
     function getFlashMem() {
-        return {
-            image: 'content/images/FlashMem.PNG',
-            projectName: 'FlashMem',
-            skillList: [
-                "JavaScript", 
-                "jQuery",
-                "HTML5", 
-                "CSS"
-            ],
-            summary: 'A flashcard simulator web application designed to help users learn the basics of programming language and interview preparation.',
-            lastUpdated: '03/13/2018',
-            webLink: 'https://tedoboiyo.github.io/FlashMem/'
-        };
+        let repoFlash = getGitHubResource('FlashMem');
+        repoFlash.image = 'content/images/FlashMem.PNG'
+        repoFlash.skillList = [
+            'JavaScript',
+            'jQuery',
+            'HTML',
+            'CSS'
+        ];
+
+        return repoFlash;
+    }
+
+    function getGitHubResource(repoName) {
+        var resource = null;
+        let auth = "?client_id=f2290bcc01b5360f62cc&client_secret=bc3890c99a9e0223d7f6a24ef81d3d45abc7f005"
+        
+        $.ajax({
+            async: false,
+            url: "https://api.github.com/repos/TedoBoiyo/" + repoName + auth,
+            cache: false,
+            method: 'GET',
+            success: function(result) {
+               resource = result;
+            },
+            error: function(err) {
+                
+            },
+            complete: function() {
+
+            }
+        });
+
+        return resource;
     }
 })();
