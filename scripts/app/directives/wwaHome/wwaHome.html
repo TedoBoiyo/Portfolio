@@ -7,21 +7,20 @@
                 Also the latest updates on what projects that I have been working on.</p>
             </div>
         </div>
-        <div class="offset-lg-1 col-lg-5 col-md-6 col-sm-12">
+        <div class="offset-lg-1 col-lg-10 col-md-12">
             <div class="home-activity">
                 <h2>Current Activities</h2>
                 <p>Currently looking for new opportunities for work.</p>
             </div>
         </div>
-        <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="offset-lg-1 col-lg-10 col-md-12">
             <h2>Current Project</h2>
             <wwa-tile class="tile"
-            image='{{latestProject.image}}'
-            project-name='{{latestProject.name}}',
-            skill-list='{{latestProject.skillList}}',
-            summary='{{latestProject.description}}',
-            last-updated='{{latestProject.updated_at | date:"MM/dd/yyyy"}}',
-            web-link='{{latestProject.homepage}}' />
+                project-name='{{latestProject.name}}'
+                summary='{{latestProject.description}}'
+                last-updated='{{latestProject.updated_at | date:"MM/dd/yyyy"}}'
+                topics="latestProject.topics"
+                web-link='{{latestProject.homepage}}' />
         </div>
     </div>
 </div>

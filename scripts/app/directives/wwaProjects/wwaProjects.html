@@ -2,12 +2,12 @@
     <div class="row">
         <div class="col-sm-12">
             <div class='project-list'>
-                <wwa-tile class="tile" ng-repeat="project in projectList"
-                image='{{project.image}}'
-                project-name='{{project.name}}',
-                skill-list='{{project.skillList}}',
-                summary='{{project.description}}',
-                last-updated='{{project.updated_at | date:"MM/dd/yyyy"}}',
+                <wwa-tile class="tile"
+                ng-repeat="project in projectList | orderBy: '-updated_at'" 
+                project-name='{{project.name}}'
+                summary='{{project.description}}'
+                last-updated='{{project.updated_at | date:"MM/dd/yyyy"}}'
+                topics="project.topics"
                 web-link='{{project.homepage}}' />
             </div>
         </div>

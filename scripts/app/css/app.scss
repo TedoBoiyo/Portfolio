@@ -3,23 +3,12 @@
 }
 
 .home-page {
-    .home-welcome {
+    .home-welcome, .home-activity {
         margin-bottom: 20px;
         border-bottom: 2px solid white;
 
         p {
             font-size: 20px;
-        }
-    }
-
-    .home-activity {
-        p {
-            font-size: 20px;
-        }
-
-        @media screen and (max-width: 766px) {
-            border-bottom: 2px solid white;
-            margin-bottom: 20px;
         }
     }
 
@@ -115,26 +104,21 @@
     text-align: center;
 
     .project-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        
     }
 }
 
 .tile {
-    width: 350px;
-    height: 500px;
-    border: 1px solid black;
-    display: inline-block;
     margin: 10px;
     text-align: left;
     position: relative;
     cursor: pointer;
 
-    -webkit-box-shadow: 1px 1px 3px 4px #ccc;
-    -moz-box-shadow: 1px 1px 3px 4px #ccc;
-    box-shadow: 1px 1px 4px 4px black; 
+    .tile-border {
+        border: 1px solid white;
+        background-color: dimgrey;
+
+    }
 
     a {
         color: white;
@@ -156,15 +140,7 @@
     }
 
     .last-modified {
-        right: 15px;
-        bottom: 0;
-        position: absolute;
-
-        @media screen and (max-width: 766px) {
-            position: static;
-            text-align: right;
-            padding-right: 15px;
-        }
+        text-align: right;
     }
 
     h4 {
@@ -179,10 +155,11 @@
     }
     
     .skills {
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        margin: 5px;
+        padding: 5px 10px;
+        background-color: steelblue;
+        border-radius: 10px;
+        display: inline-block;
     }
 }
 

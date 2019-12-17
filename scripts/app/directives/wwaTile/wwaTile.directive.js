@@ -12,32 +12,20 @@
         var directive = {
             transclude: true,
             scope: {
-                image: '@',
                 projectName: '@',
                 summary: '@',
                 lastUpdated: '@',
+                topics: '=',
                 webLink: '@'
             },
-            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html',
-            link: _link
+            templateUrl: 'scripts/app/directives/wwaTile/wwaTile.html'
         };
 
         return directive;
 
         ///////////
 
-        function _link(scope, elem, attrs) {
-            scope.skillList = JSON.parse(attrs.skillList);
-        }
     }
 
     ///////////
-
-    function _link(scope, elem, attrs) {
-        if(attrs.skillList) {
-            scope.skillList = JSON.parse(attrs.skillList);  
-        } else {
-            scope.skillList = null;
-        }
-    }
 })();

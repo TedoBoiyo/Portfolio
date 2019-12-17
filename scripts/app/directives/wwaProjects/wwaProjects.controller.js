@@ -18,7 +18,8 @@
         ///////////
 
         function activate() {
-            $scope.projectList = wwaProjectService.getProjects();
+            $scope.projectList = wwaProjectService.getProjects()[0];
+            console.log($scope.projectList);
         }
 
     }

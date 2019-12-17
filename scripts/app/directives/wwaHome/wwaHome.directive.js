@@ -23,7 +23,7 @@
 
         function _link(scope, elem, attrs) {
             scope.latestProject;
-            var projectList = wwaProjectService.getProjects();
+            var projectList = wwaProjectService.getProjects()[0];
             
             for (let i = 0; i < projectList.length; i++) {
                 if (!scope.latestProject) {

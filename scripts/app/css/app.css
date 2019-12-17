@@ -2,24 +2,13 @@
   padding: 20px;
 }
 
-.home-page .home-welcome {
+.home-page .home-welcome, .home-page .home-activity {
   margin-bottom: 20px;
   border-bottom: 2px solid white;
 }
 
-.home-page .home-welcome p {
+.home-page .home-welcome p, .home-page .home-activity p {
   font-size: 20px;
-}
-
-.home-page .home-activity p {
-  font-size: 20px;
-}
-
-@media screen and (max-width: 766px) {
-  .home-page .home-activity {
-    border-bottom: 2px solid white;
-    margin-bottom: 20px;
-  }
 }
 
 .home-page .tile {
@@ -111,32 +100,16 @@
   text-align: center;
 }
 
-.project-page .project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .tile {
-  width: 350px;
-  height: 500px;
-  border: 1px solid black;
-  display: inline-block;
   margin: 10px;
   text-align: left;
   position: relative;
   cursor: pointer;
-  -webkit-box-shadow: 1px 1px 3px 4px #ccc;
-  box-shadow: 1px 1px 4px 4px black;
+}
+
+.tile .tile-border {
+  border: 1px solid white;
+  background-color: dimgrey;
 }
 
 .tile a {
@@ -159,17 +132,7 @@
 }
 
 .tile .last-modified {
-  right: 15px;
-  bottom: 0;
-  position: absolute;
-}
-
-@media screen and (max-width: 766px) {
-  .tile .last-modified {
-    position: static;
-    text-align: right;
-    padding-right: 15px;
-  }
+  text-align: right;
 }
 
 .tile h4 {
@@ -184,10 +147,11 @@
 }
 
 .tile .skills {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: steelblue;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .tile-image, .tile-image-placeholder {
