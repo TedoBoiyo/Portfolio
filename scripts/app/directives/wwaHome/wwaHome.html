@@ -9,11 +9,11 @@
         </div>
         <div class="offset-lg-1 col-lg-10 col-md-12">
             <div class="home-activity">
-                <h2>Current Activities</h2>
+                <h2>Mission Statement</h2>
                 <p>Currently looking for new opportunities for work.</p>
             </div>
         </div>
-        <div class="offset-lg-1 col-lg-10 col-md-12">
+        <div class="offset-lg-1 col-lg-10 col-md-12" ng-show="latestProject">
             <h2>Current Project</h2>
             <wwa-tile class="tile"
                 project-name='{{latestProject.name}}'
@@ -21,6 +21,9 @@
                 last-updated='{{latestProject.updated_at | date:"MM/dd/yyyy"}}'
                 topics="latestProject.topics"
                 web-link='{{latestProject.homepage}}' />
+        </div>
+        <div class="offset-lg-1 col-lg-10 col-md-12" ng-show="!latestProject">
+            <div class="loading"><span class="fa fa-spinner"></span></div>
         </div>
     </div>
 </div>

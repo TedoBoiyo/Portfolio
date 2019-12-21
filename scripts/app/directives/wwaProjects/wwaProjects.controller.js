@@ -7,7 +7,8 @@
 
         wwaProjectsController.$inject = [
         '$scope',
-        'wwaProjectService'
+        'wwaProjectService',
+        '$timeout'
     ];
 
     function wwaProjectsController($scope, wwaProjectService) {
@@ -19,7 +20,6 @@
 
         function activate() {
             $scope.projectList = wwaProjectService.getProjects()[0];
-            console.log($scope.projectList);
         }
 
     }
