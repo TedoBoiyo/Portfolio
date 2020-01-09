@@ -1,20 +1,17 @@
 <div class="page home-page">
     <div class="row">
+        <h2 class="col-12">Welcome</h2>
         <div class="offset-lg-1 col-lg-10 col-md-12">
-            <div class="home-welcome">
-                <h2>Welcome!</h2>
-                <p>Below you can check out what I've been up to recently.
-                Also the latest updates on what projects that I have been working on.</p>
+            <div class="home-welcome text-center">
+                <p>
+                    Welcome to my web portfolio. I hope to leave a positive impression in your visit here! Below you can check out the current
+                    project that I am working on. If you want to personally connect with me then click on any of the social links at the very bottom
+                    of the page. Other than that, thanks for visiting!
+                </p>
             </div>
         </div>
-        <div class="offset-lg-1 col-lg-10 col-md-12">
-            <div class="home-activity">
-                <h2>Mission Statement</h2>
-                <p>Currently looking for new opportunities for work.</p>
-            </div>
-        </div>
-        <div class="offset-lg-1 col-lg-10 col-md-12" ng-show="latestProject">
-            <h2>Current Project</h2>
+        <h2 class="col-12">Current Project</h2>
+        <div class="offset-lg-4 col-lg-4 col-md-12" ng-show="latestProject">
             <wwa-tile class="tile"
                 project-name='{{latestProject.name}}'
                 summary='{{latestProject.description}}'

@@ -1,15 +1,12 @@
 <div class="page project-page">
     <div class="row">
-        <div class="col-sm-12">
-            <div class='project-list'>
-                <wwa-tile class="tile"
-                ng-repeat="project in projectList | orderBy: '-updated_at'" 
-                project-name='{{project.name}}'
-                summary='{{project.description}}'
-                last-updated='{{project.updated_at | date:"MM/dd/yyyy"}}'
-                topics="project.topics"
-                web-link='{{project.homepage}}' />
-            </div>
+        <div class="col-sm-4" ng-repeat="project in projectList | orderBy: '-updated_at'">
+            <wwa-tile class="tile"
+            project-name='{{project.name}}'
+            summary='{{project.description}}'
+            last-updated='{{project.updated_at | date:"MM/dd/yyyy"}}'
+            topics="project.topics"
+            web-link='{{project.homepage}}' />
         </div>
     </div>
 </div>
